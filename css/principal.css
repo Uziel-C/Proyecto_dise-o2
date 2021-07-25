@@ -1,0 +1,536 @@
+/*body{
+    margin: 0;
+    padding: 0;
+    background: #e84118;
+}
+#buscador{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+}*/
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #E0E4E5;
+    font-family: arial;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.slider{
+    border-radius: 5px;
+    position: relative;
+    margin: 7px;
+}
+.slides{
+    list-style-type: none;
+}
+.li_slides{
+    position: relative;
+    display: none;
+    height: 64vh;
+}
+.img_slider{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.buttons{
+    position: absolute;
+    top: 37%;
+    width: 100%;
+}
+.next,.prev{
+    font-size: 4rem;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    color: white;
+}
+.next{
+    right: 0;
+}
+.prev{
+    left: 0;
+}
+.next:hover,.prev:hover{
+    background: hsl(0, 0%, 25%);
+    color: hsl(0, 0%, 93%);
+}
+.slider ul li{
+    animation: fade;
+    animation-duration: 2.5s;
+}
+#titulo_ofertas{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+#grandes{
+    font-size: 30px;
+}
+#ofertas{
+    margin-top: 10px;
+    font-size: 23px;
+}
+#contenedor_ofertas{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+.combos{
+    text-align: center;
+    padding: 10px 15px 30px 15px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+.img{
+    width: 70%;
+    height: auto;
+}
+.descripcion{
+    width: 100%;
+    height: auto;
+}
+.combo{
+    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+}
+.titulo_contenido{
+    font-size: 21px;   
+}
+.contenido{
+    font-size: 13px;
+    line-height: 17px;
+    margin: 10px 0px 10px 0px;
+}
+.precio{
+    font-size: 20px;
+    margin: 12px 0px 20px 0px;
+}
+.precio::before{
+    content: "S/.";
+    margin-right: 7px;
+}
+.precio::after{
+    content: ".00";
+}
+.comprar{
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    font-weight: 550;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px auto;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+.bloque_titulo{
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+#titulo_principal{
+    font-size: 30px;
+    font-weight: 1200;
+}
+#contenedor_ofrecemos{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.iconos{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.ofrecemos{
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+}
+.info_adicional{
+    font-size: 14px;
+}
+#titulo_marca{
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+#principal_marca{
+    font-size: 30px;
+    font-weight: 1200;
+}
+#contenedor_marcas{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.marcas{
+    text-align: center;
+    padding: 25px 15px 10px 15px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+.img_marcas{
+    width: 40%;
+    height: auto;
+    margin-top: 5px;
+}
+.img_marcas:hover{
+    transform: scale(1.5);
+    transition: all 0.5s linear;
+}
+.img_produc{
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+}
+.titulo_secundario{
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+@keyframes fade{
+    from{opacity: .2}
+    to{opacity: 1}
+}
+#chat_servicio{
+    position: fixed;
+    right: 20px;
+    top: 75vh;
+    width: 105px;
+    height: auto;
+    cursor: pointer;
+}
+#mostrar_chat{
+    display: none;
+}
+#chat{
+    display: none;
+}
+label:checked ~ #chat{
+    display: block;
+}
+
+
+
+#chat{
+    position: fixed;
+    right: 30px;
+    top: 21vh;
+    width: 335px;
+    height: 480px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#opciones{
+    width: 100%;
+    background-color: white;
+    height: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    border-bottom: solid 4px green;
+}
+#avatar{
+    width: 26%;
+    cursor: pointer;
+}
+#persona{
+    width: 70px;
+    height: auto;
+    margin: 5px 5px 1px 10px;
+}
+#linea_nombre{
+    width: 20%;
+    text-align: center;
+}
+#nombre{
+    font-size: 24px;
+    margin: -5px 10px -10px 0px;
+}
+#linea{
+    font-size: 13px;
+    margin: 10px 10px 0px 0px;
+    color: green;
+    font-weight: 600;
+}
+#icono_llamar{
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+.llamar{
+    width: 30%;
+    font-size: 25px;
+    color: black;
+}
+#texto_llamar{
+    font: 17px arial;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin: 5px 0px 0px 0px;
+    color: green;
+}
+#close{
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+.cerrar{
+    font-size: 26px;
+    display: table;
+    transform: rotate(45deg);
+    text-align: center;
+    margin: auto;
+    margin-top: -5px;
+}
+#texto_cerrar{
+    font: 18px arial;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: green;
+    margin: 0px 0px 0px 0px;
+}
+#contenido{
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+    background: #E0E5E9;
+    padding-bottom: 15px;
+}
+#contenido::-webkit-scrollbar{
+    width: 7px;
+}
+#contenido::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius: 10px;
+}
+#presentacion, #apoyo{
+    width: 73%;
+    margin: 18px 12% 1% 7%;
+    text-align: left;
+    background-color: white;
+    padding: 10px 15px 15px 15px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    font-size: 12px;
+    border-radius: 13px;
+}
+#apoyo{
+    margin-top: 23px;
+}
+#extra{
+    font-size: 13px;
+    font-weight: 550;
+}
+.opciones{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    border: solid 2px green;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.opciones:hover{
+    background-color: #b8daba;
+}
+#charlar{
+    width: 100%;
+    height: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+#escribir{
+    width: 80%;
+    height: 30px;
+    border: 0;
+    margin: 5px;
+    margin-left: 15px;
+    outline: none;
+}
+#enviar{
+    width: 20%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    background-color: green;
+    cursor: pointer;
+}
+.enviar{
+    color: white;
+    font-size: 20px;
+}
+@media (max-width: 1000px){
+    .li_slides{
+    height: 45vh;
+    }
+    .img_slider{
+        object-fit: cover;
+    }
+    .buttons{
+    top: 40%;
+    }
+    .next,.prev{
+    font-size: 3rem;
+    }
+    #registro{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .li_slides{
+    height: 30vh;
+    }
+    .buttons{
+    top: 35%;
+    }
+    .next,.prev{
+    font-size: 2.5rem;
+    }
+}
+footer{
+    width: 100%;
+    background-color: black;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+.info{
+    width: 100%;
+    height: auto;
+    padding: 3% 3% 3% 3%;
+}
+.redes{
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+.logo_pago{
+    width: 50px;
+    height: auto;
+    margin-left: -6px;
+}
+#watsapp{
+    width: 40px;
+    height: auto;
+    margin-left: 60px;
+}
+.adicional, .soporte{
+    color: white;
+    line-height: 2.3;
+    font-size: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+#redes{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+}
+#pago_titulo, #soporte_titulo, #acerca{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#electronico1, #electronico2{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+#electronico2{
+    margin-top: 25px;
+}
+#contactanos{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#cell{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    margin: 10px;
+    margin-right: 60px;
+}
+#cuentas, #tarjetas{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+
+#registro{
+    background-color: black;
+    width: 100px;
+    height: auto;
+    padding: 8px;
+    position: absolute;
+    top: 460px;
+    left: 30px;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+#registrados{
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}

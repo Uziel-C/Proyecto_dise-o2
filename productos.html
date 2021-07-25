@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Productos</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Todo tipo de objetos que necesitas para halloween ">
+        <meta name="keywords" content="Accesorios, dulces, disfraces, juguetes y decoracion para celebrar halloween">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/productos.css">
+    </head>
+    <body>
+        <div id="volver">
+            <a href="principal.html"><h1 id="mensaje_volver">Volver</h1></a>
+        </div>
+        <div id="control">
+            <input type="checkbox" id="mostrar_opcion">
+            <label for="mostrar_opcion"><i class="fas fa-cog" id="menu"></i></label>
+            <ul id="configuracion">
+                <li>
+                    <i class="fas fa-circle bola" id="color_white" onclick="color_blanco()"></i>
+                    <div class="nombre_color">Blanco</div>
+                </li>
+                <li>
+                    <i class="fas fa-circle bola" id="color_black" onclick="color_negro()"></i>
+                    <div class="nombre_color">Negro</div>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap">
+            <h1>Escoja un producto</h1>
+            <div class="store-wrapper">
+                <div class="category_list">
+                    <a href="#" class="category_item" category="all">Todo</a>
+                    <a href="#" class="category_item" category="accesorios">Accesorios</a>
+                    <a href="#" class="category_item" category="dulces">Dulces</a>
+                    <a href="#" class="category_item" category="disfraces">Disfraces</a>
+                    <a href="#" class="category_item" category="juguetes">Juguetes</a>
+                    <a href="#" class="category_item" category="decoracion">Decoración</a>
+                    <a href="#" class="category_item" category="libros">Libros</a>
+                </div>
+                <section class="products-list">
+                    <div class="product-item" category="accesorios">
+                        <div class="product-card">
+                            <h2 class="name">Aretes</h2>
+                            <span class="precio">5.00</span>
+                            <a href="#arete_accesorio1" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Accesorios/aretes.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="arete_accesorio1">
+                            <a class="retroceder" href="#">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Accesorios/aretes.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Arete vampiro<br><span>Accesorio</span></h2>
+                                    <p>Su medida es de un centímetro de largo y cinco milímetros de ancho, su material de fabricación es plata y plastico, resistente al agua ya que no se descoloriza ni se oxida, lo que mas resalta en este producto es su toque de simpleza y de decoración, te aseguramos que este arete atraira a muchas miradas, el producto te llegara en una caja de uno punto dos centimetros de largo y un centimetro de ancho, con una funda de bolitas de plastico.</p>
+                                    <span class="precio">5.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#llavero_accesorio2">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="accesorios">
+                        <div class="product-card">
+                          <h2 class="name">Llavero</h2>
+                          <span class="precio">10.00</span>
+                          <a href="#llavero_accesorio2" class="popup-btn">Detalles</a>
+                          <img src="img/Productos/Accesorios/llavero.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="llavero_accesorio2">
+                            <a class="retroceder" href="#arete_accesorio1">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Accesorios/llavero.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Llavero<br><span>Accesorio</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">10.00</span>    
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#vincha_accesorio3">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="accesorios">
+                        <div class="product-card">
+                            <h2 class="name">Vincha</h2>
+                            <span class="precio">5.00</span>
+                            <a href="#vincha_accesorio3" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Accesorios/vincha.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="vincha_accesorio3">
+                            <a class="retroceder" href="#llavero_accesorio2">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Accesorios/vincha.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Vincha<br><span>Accesorio</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">5.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#pintalenguas_dulces1">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="dulces">
+                        <div class="product-card">
+                            <h2 class="name">Pintalenguas</h2>
+                            <span class="precio">8.00</span>
+                            <a href="#pintalenguas_dulces1" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Dulces/pintalenguas.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="pintalenguas_dulces1">
+                            <a class="retroceder" href="#vincha_accesorio3">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Dulces/pintalenguas.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Pintalenguas<br><span>Dulces</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">8.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#masmelos_dulces2">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="dulces">
+                        <div class="product-card">
+                            <h2 class="name">Masmelos</h2>
+                            <span class="precio">6.50</span>
+                            <a href="#masmelos_dulces2" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Dulces/masmelos.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="masmelos_dulces2">
+                            <a class="retroceder" href="#pintalenguas_dulces1">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Dulces/masmelos.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Masmelos<br><span>Dulces</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">6.50</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#gomitas_dulces3">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="dulces">
+                        <div class="product-card">
+                            <h2 class="name">Gomitas</h2>
+                            <span class="precio">7.30</span>
+                            <a href="#gomitas_dulces3" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Dulces/gomitas.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="gomitas_dulces3">
+                            <a class="retroceder" href="#masmelos_dulces2">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Dulces/gomitas.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Gomitas<br><span>Dulces</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">7.30</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#it_disfraces1">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="disfraces">
+                        <div class="product-card">
+                            <h2 class="name">IT</h2>
+                            <span class="precio">20.00</span>
+                            <a href="#it_disfraces1" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Disfraces/it.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="it_disfraces1">
+                            <a class="retroceder" href="#gomitas_dulces3">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Disfraces/it.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>IT<br><span>Disfraces</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">20.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#novia_disfraces2">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="disfraces">
+                        <div class="product-card">
+                            <h2 class="name">Novia</h2>
+                            <span class="precio">30.00</span>
+                            <a href="#novia_disfraces2" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Disfraces/novia.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="novia_disfraces2">
+                            <a class="retroceder" href="#it_disfraces1">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Disfraces/novia.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Novia<br><span>Disfraces</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">30.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#lobo_disfraces3">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="disfraces">
+                        <div class="product-card">
+                            <h2 class="name">Hombre lobo</h2>
+                            <span class="precio">33.50</span>
+                            <a href="#lobo_disfraces3" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Disfraces/lobo.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="lobo_disfraces3">
+                            <a class="retroceder" href="#novia_disfraces2">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Disfraces/lobo.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Hombre lobo<br><span>Disfraces</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">33.50</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#monja_juguetes1">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="juguetes">
+                        <div class="product-card">
+                            <h2 class="name">Monja Funko</h2>
+                            <span class="precio">40.00</span>
+                            <a href="#monja_juguetes1" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Juguetes/monja.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="monja_juguetes1">
+                            <a class="retroceder" href="#lobo_disfraces3">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Juguetes/monja.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Monja Funko<br><span>Juguetes</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">40.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#araña_juguetes2">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="juguetes">
+                        <div class="product-card">
+                            <h2 class="name">Araña Robot</h2>
+                            <span class="precio">30.00</span>
+                            <a href="#araña_juguetes2" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Juguetes/ara%C3%B1a.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="araña_juguetes2">
+                            <a class="retroceder" href="#monja_juguetes1">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Juguetes/ara%C3%B1a.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Araña Robot<br><span>Juguetes</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">30.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#acuerda_juguetes3">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="juguetes">
+                        <div class="product-card">
+                            <h2 class="name">A cuerda</h2>
+                            <span class="precio">28.00</span>
+                            <a href="#acuerda_juguetes3" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Juguetes/a%20cuerda.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="acuerda_juguetes3">
+                            <a class="retroceder" href="#araña_juguetes2">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Juguetes/a%20cuerda.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>A cuerda<br><span>Juguetes</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">28.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#globos_decoracion1">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="decoracion">
+                        <div class="product-card">
+                            <h2 class="name">Globos</h2>
+                            <span class="precio">10.00</span>
+                            <a href="#globos_decoracion1" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Decoracion/globos.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="globos_decoracion1">
+                            <a class="retroceder" href="#acuerda_juguetes3">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Decoracion/globos.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Globos<br><span>Decoración</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">10.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#ceramica_decoracion2">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="decoracion">
+                        <div class="product-card">
+                            <h2 class="name">Ceramica</h2>
+                            <span class="precio">15.00</span>
+                            <a href="#ceramica_decoracion2" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Decoracion/ceramica.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="ceramica_decoracion2">
+                            <a class="retroceder" href="#globos_decoracion1">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Decoracion/ceramica.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Ceramica<br><span>Decoración</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">15.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#velas_decoracion3">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="decoracion">
+                        <div class="product-card">
+                            <h2 class="name">Velas</h2>
+                            <span class="precio">12.00</span>
+                            <a href="#velas_decoracion3" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Decoracion/velas.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="velas_decoracion3">
+                            <a class="retroceder" href="#ceramica_decoracion2">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Decoracion/velas.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Velas<br><span>Decoración</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">12.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#it_libros1">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="libros">
+                        <div class="product-card">
+                            <h2 class="name">IT</h2>
+                            <span class="precio">20.00</span>
+                            <a href="#it_libros1" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Libros/IT.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="it_libros1">
+                            <a class="retroceder" href="#velas_decoracion3">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Libros/IT.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>IT<br><span>Libros</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">20.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#coraline_libros2">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="libros">
+                        <div class="product-card">
+                            <h2 class="name">Coraline</h2>
+                            <span class="precio">15.00</span>
+                            <a href="#coraline_libros2" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Libros/Coraline.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="coraline_libros2">
+                            <a class="retroceder" href="#it_libros1">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Libros/Coraline.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Coraline<br><span>Libros</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">15.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#exorcista_libros3">&#62;</a>
+                        </div>
+                    </div>
+                    <div class="product-item" category="libros">
+                        <div class="product-card">
+                            <h2 class="name">Exorcista</h2>
+                            <span class="precio">18.00</span>
+                            <a href="#exorcista_libros3" class="popup-btn">Detalles</a>
+                            <img src="img/Productos/Libros/Exorcista.png" class="product-img" alt="">
+                        </div>
+                        <div class="popup-view" id="exorcista_libros3">
+                            <a class="retroceder" href="#coraline_libros2">&#60;</a>
+                            <div class="popup-card">
+                                <a href="#" class="close-btn">&#10010;</a>
+                                <div class="product-img">
+                                    <img src="img/Productos/Libros/Exorcista.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2>Exorcista<br><span>Decoración</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aspernatur natus in officia possimus. Tenetur culpa labore dolor, ad repellat placeat dolores, distinctio expedita aut aspernatur optio, voluptatum quis assumenda non reiciendis quaerat veniam. Expedita asperiores deleniti ullam quasi quas! Sequi eveniet laudantium, sint repellat incidunt quia cupiditate fuga! Laborum voluptates.</p>
+                                    <span class="precio">18.00</span>
+                                    <a href="#" class="add-cart-btn">Añadir al carrito</a>
+                                    <a href="#" class="add-wish">Añadir a la lista deseos</a>
+                                </div>
+                            </div>
+                            <a class="avanzar" href="#">&#62;</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <section class="info" id="siguenos">
+                <h1 id="redes">Siguenos</h1>
+                <div id="cuentas">
+                <a href="https://es-la.facebook.com/" target="_blank"><img class="redes" src="img/Redes/facebook_black.png"></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="redes" src="img/Redes/instagram_black.png"></a>
+                <a href="https://www.snapchat.com/l/es/" target="_blank"><img class="redes" src="img/Redes/snapchap_black.png"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img class="redes" src="img/Redes/twitter_black.png"></a>
+                </div>
+            </section>
+            <section class="info" id="servicio_cliente">
+                <h1 id="soporte_titulo">Soporte al cliente</h1>
+                <a href="preguntas.html" class="soporte">Preguntas frecuentes<br></a>
+                <a href="#" class="soporte">Tiempos y costos de envio<br></a>
+                <a href="#" class="soporte">Cambios y devoluciones<br></a>
+                <a href="#" class="soporte">Terminos y condiciones<br></a>
+                <a href="#" class="soporte">Privacidad y seguridad<br></a>
+                <a href="#" class="soporte">Libro de reclamaciones<br></a>
+            </section>
+            <section class="info" id="conocenos">
+                <h1 id="acerca">Acerca de la empresa</h1>
+                <a href="#" class="adicional">Nuestra empresa<br></a>
+                <a href="#" class="adicional">Proveedores<br></a>
+                <a href="#" class="adicional">Inversionistas<br></a>
+                <a href="#" class="adicional">Cyber Monday<br></a>
+                <a href="#" class="adicional">Black Friday<br></a>
+                <a href="#" class="adicional">Trabaja con nosotros<br></a>
+            </section>
+            <section class="info" id="metodos_pago">
+                <h1 id="pago_titulo">Medios de pago</h1>
+                <h2 id="electronico1">Pago electronico</h2>
+                <div id="tarjetas">
+                <img class="logo_pago" src="img/pago_electronico/yape.png">
+                <img class="logo_pago" src="img/pago_electronico/bcp.png">
+                <img class="logo_pago" src="img/pago_electronico/visa.png">
+                <img class="logo_pago" src="img/pago_electronico/master_card.png">
+                <img class="logo_pago" src="img/pago_electronico/bbva.png">
+                </div>
+                <h2 id="electronico2">Pago en efectivo</h2>
+                <h3 id="contactanos">Contactanos y coordinemos la entrega</h3>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img id="watsapp" src="img/Redes/watsapp_black.png"></a>
+                <h3 id="cell">Cell 991233653</h3>
+            </section>
+        </footer>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/productos.js"></script>
+    </body>
+</html>
