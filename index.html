@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Formulario validado</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Formulario validado">
+    <meta name="keywords" content="Formulario validado">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+   <img src="img/fondo.jpg">
+   <div id="control">
+        <input type="checkbox" id="mostrar_opcion">
+        <label for="mostrar_opcion"><i class="fas fa-cog" id="menu"></i></label>
+        <ul id="configuracion">
+            <li>
+                <i class="fas fa-circle bola" id="color_red" onclick="color_rojo()"></i>
+                <div class="nombre_color">Rojo</div>
+            </li>
+        </ul>
+    </div>
+    <section class="contenedor">
+        <h1>Registrate</h1>
+        <a class="omitir" href="principal.html"><i class="fas fa-window-close"></i></a>
+        <form action="php\registrar.php" method="post" id="miform" onsubmit="return validar();">
+            <section class="textbox">
+                <i class="fa fa-user icon"></i>
+                <input type="text" placeholder="Nombre de usuario" name="nombre" value="" id="nombre" class="inpu">
+            </section>
+            <section class="textbox">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" placeholder="Contraseña" name="clave" value="" id="clave" class="inpu">
+            </section>
+            <section class="textbox">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" placeholder="Confirme su contraseña" name="" value="" id="confirmacion" class="inpu">
+            </section>
+            <section class="textbox">
+                <i class="fas fa-birthday-cake icon"></i>
+                <input type="number" placeholder="Edad" name="edad" value="" id="edad" class="inpu">
+            </section>
+            <section class="textbox">
+                <i class="fas fa-venus-mars icon"></i>
+                <input type="" placeholder="Sexo" name="sexo" value="" id="sexo" class="inpu">
+            </section>
+            <section class="textbox">
+                <i class="fas fa-mobile icon"></i>
+                <input type="tel" placeholder="Numero telefonico" name="telefono" value="" id="telefono" class="inpu">
+            </section>
+                <input class="btnacceder inpu" type="submit" name="" value="Confirmar">
+        </form>
+        <section id="sociales">
+            <a href="https://es-la.facebook.com/" target="_blank"><img class="redes" src="img/Redes/facebook.png"></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="redes" src="img/Redes/instagram.png"></a>
+            <a href="https://www.snapchat.com/l/es/" target="_blank"><img class="redes" src="img/Redes/snapchap.png"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img class="redes" src="img/Redes/twitter.png"></a>
+        </section>
+    </section>
+    <script src="js/formulario.js"></script>
+</body>    
+</html>
